@@ -18,6 +18,7 @@ apply plugin: 'io.spring.dependency-management'
 group = 'io.spring'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 11
+targetCompatibility = 11
 
 repositories {
   mavenCentral()
@@ -29,6 +30,7 @@ dependencies {
   implementation('org.springframework.boot:spring-boot-starter-security')
   implementation('org.springframework.boot:spring-boot-starter-web')
   implementation 'org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:2.1.0.RELEASE'
+  implementation('org.springframework.boot:spring-boot-starter-actuator')
   runtimeOnly('org.springframework.boot:spring-boot-devtools')
   runtimeOnly('com.h2database:h2')
   compileOnly('org.projectlombok:lombok')
